@@ -1,4 +1,37 @@
 # fastapi crud through RestAPI
+Create a directory for the project.
+$ mkdir apiapp
+$ cd ./apiapp/
+
+# Make sure you have a Python version > 3.6
+python --version
+# create a new environment for your project.
+# That will create a directory ./env/ that will contain a full Python environment, with its own packages, etc.
+python -m venv env
+# Activate ENV in Windows
+source ./env/Scripts/activate
+# in Poweshell
+.\env\Scripts\Activate.ps1
+
+Get-Command python # To confirm which Python you have in 
+
+Your (env) is active, so just install it there.
+# Install FastAPI + Uvicorn
+python -m pip install fastapi uvicorn
+# Verify the installation 
+python -m uvicorn --version
+# Create main.py
+fastapicrud/
+├── env/
+└── main.py
+# Start your FastAPI application Run
+python -m uvicorn main:app --reload
+
+# Open your application
+http://127.0.0.1:8000/ 
+
+# Open postman in your application
+http://127.0.0.1:8000/docs
 
 # FastAPI is a web framework for building HTTP-based service APIs in Python 3.8+. It uses Pydantic and type hints to validate serialize and deserialize data. 
 
