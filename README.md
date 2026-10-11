@@ -4,18 +4,30 @@ $ mkdir apiapp
 $ cd ./apiapp/
 
 # Make sure you have a Python version > 3.6
+# In Powershell
 python --version
 # create a new environment for your project.
 # That will create a directory ./env/ that will contain a full Python environment, with its own packages, etc.
 python -m venv env
-# Activate ENV in Windows
-source ./env/Scripts/activate
-# in Poweshell
-.\env\Scripts\Activate.ps1
 
+# In Linux/ Bash
+# Check Python version
+python3 --version
+# Check pip
+python3 -m pip --version
+# Install FastAPI and Uvicorn
+python3 -m pip install fastapi uvicorn
+# Verify FastAPI installation
+python3 -m pip show fastapi
+# Run FastAPI application
+python3 -m uvicorn main:app --reload
+# Activate ENV
+Linux: source env/bin/activate
+Git Bash on Windows: source env/Scripts/activate
+PowerShell: .\env\Scripts\Activate.ps1
+---
 Get-Command python # To confirm which Python you have in 
-
-Your (env) is active, so just install it there.
+Your (env) is active, so just install it there Powershell.
 # Install FastAPI + Uvicorn
 python -m pip install fastapi uvicorn
 # Verify the installation 
