@@ -6,7 +6,7 @@ $ cd ./apiapp/
 # Make sure you have a Python version > 3.6
 # In Powershell
 python --version
-# create a new environment for your project.
+# create a new environment (main root folder) for your project.
 # That will create a directory ./env/ that will contain a full Python environment, with its own packages, etc.
 python -m venv env
 
